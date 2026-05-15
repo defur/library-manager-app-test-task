@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  width: calc(100% - 40px);
+  margin: 80px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 14px;
+  cursor: pointer;
+  margin: 4px 4px 4px 0;
+}
+
+#message {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.section {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #ddd;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  align-items: end;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  box-sizing: border-box;
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.book-item,
+.author-item {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.book-title {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.small-text {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  .top-bar,
+  .form-row,
+  .filter-row {
+    display: block;
+  }
+}

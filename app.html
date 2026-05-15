@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library App</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main class="container">
+      <div class="top-bar">
+        <div>
+          <h1>Library App</h1>
+          <p>Logged in as <span id="loggedUser"></span></p>
+        </div>
+        <button id="logoutButton" type="button">Log out</button>
+      </div>
+
+      <section class="section">
+        <h2>Authors</h2>
+        <form id="authorForm" class="form-row">
+          <div>
+            <label for="authorName">Author name</label>
+            <input id="authorName" type="text" required>
+          </div>
+          <div></div>
+          <button type="submit">Add author</button>
+        </form>
+        <div id="authorsList"></div>
+      </section>
+
+      <section class="section">
+        <h2>Books</h2>
+        <form id="bookForm" class="form-row">
+          <div>
+            <label for="bookTitle">Book title</label>
+            <input id="bookTitle" type="text" required>
+          </div>
+          <div>
+            <label for="bookAuthor">Author</label>
+            <select id="bookAuthor" required></select>
+          </div>
+          <button type="submit">Add book</button>
+        </form>
+
+        <div class="filter-row">
+          <div>
+            <label for="searchInput">Filter by title or author</label>
+            <input id="searchInput" type="text" placeholder="Type to search">
+          </div>
+          <button id="exportButton" type="button">Export books</button>
+        </div>
+
+        <div id="booksList"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
