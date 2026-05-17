@@ -48,12 +48,6 @@ instructions.
 
 ---
 
-## Screenshot
-
-maby later???
-
----
-
 ## Run locally
 
 Clone the repository:
