@@ -10,6 +10,8 @@ const bookTitle = document.querySelector("#bookTitle");
 const bookAuthor = document.querySelector("#bookAuthor");
 const booksList = document.querySelector("#booksList");
 const searchInput = document.querySelector("#searchInput");
+const searchButton = document.querySelector("#searchButton");
+const clearSearchButton = document.querySelector("#clearSearchButton");
 const exportButton = document.querySelector("#exportButton");
 
 let authors = JSON.parse(localStorage.getItem("authors")) || [];
@@ -157,7 +159,12 @@ function deleteAuthor(authorId) {
   renderBooks();
 }
 
-searchInput.addEventListener("input", renderBooks);
+searchButton.addEventListener("click", renderBooks);
+
+clearSearchButton.addEventListener("click", () => {
+  searchInput.value = "";
+  renderBooks();
+});
 
 exportButton.addEventListener("click", () => {
   const exportedBooks = books.map((book) => {
