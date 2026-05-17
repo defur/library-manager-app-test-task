@@ -35,6 +35,12 @@ button {
   margin: 4px 4px 4px 0;
 }
 
+.form-row button,
+.filter-row button {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
 #message {
   color: red;
 }
